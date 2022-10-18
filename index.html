@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //bai1
+      const box1 = "green";
+      const box2 = "red";
+      const box3 = "blue";
+      const color = "red";
+      let result = "";
+      if (color == box1) {
+        result = "xanh lá";
+      } else if (color == box2) {
+        result = "đỏ";
+      } else {
+        result = "xanh da trời";
+      }
+      console.log(`Hộp có màu ${result}`);
+      //bai2
+      const num = 8;
+      let xeploai = "";
+      if (num < 6) {
+        xeploai = "F";
+      } else if (num == 6) {
+        xeploai = "D";
+      } else if (num == 7) {
+        xeploai = "C";
+      } else if (num == 8) {
+        xeploai = "B";
+      } else {
+        xeploai = "A";
+      }
+      console.log(`Xếp loại ${xeploai}`);
+      //bai 3
+      const a = 42;
+      const b = 46;
+      const c = 43;
+      let sortAscend = "";
+      if (a >= b && b >= c) {
+        sortAscend = `${a} ${b} ${c}`;
+      } else if (a >= b && a >= c && c >= b) {
+        sortAscend = `${a} ${c} ${b}`;
+      } else if (b >= a && a >= c) {
+        sortAscend = `${b} ${a} ${c}`;
+      } else if (b >= a && b >= c && c >= a) {
+        sortAscend = `${b} ${c} ${a}`;
+      } else if (c >= a && a >= b) {
+        sortAscend = `${c} ${a} ${b}`;
+      } else if (c >= a && c >= b && b >= a) {
+        sortAscend = `${c} ${b} ${a}`;
+      }
+      console.log(sortAscend);
+    </script>
+  </head>
+  <body></body>
+</html>
